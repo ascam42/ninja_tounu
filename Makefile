@@ -5,7 +5,7 @@
 ## Login   <ungaro_l@epitech.net>
 ## 
 ## Started on  Sat Dec 12 04:21:03 2015 Luca Ungaro
-## Last update Sat Dec 12 15:34:22 2015 Luca Ungaro
+## Last update Fri Dec  4 21:04:36 2015 Luca Ungaro
 ##
 
 NAME	= ninja
@@ -29,7 +29,10 @@ LDFLAGS	= -L$(LIB) \
 	-lstdc++ -ldl \
 	-lm
 
-all:	 $(NAME)
+all:	 liblapin $(NAME)
+
+liblapin:
+	cd ./liblapin1.5_release; ./real_install.sh; cd ..
 
 $(NAME):
 	$(RM) $(NAME)
