@@ -40,9 +40,17 @@ t_my_awesome_feedback	*install(t_nice_player *yourself)
 
       case LINUX :
       /*
-      ** Simply call make once at the root of
+      ** Simply call 'sudo make' once at the root of
       ** ninja's folder. Then execute ./ninja
       ** and ENJOY !
+      **
+      ** CAREFUL : make needs to be called as sudo,
+      ** so it can install the liblapin graphic lib.
+      **
+      ** CAREFUL AGAIN : the liblapin uses SFML to compile !
+      ** If SFML is not installed on your device, you
+      ** may be looking for the libsfml-dev and libscfml-dev
+      ** packages on yout distribution's repos...
       */
       break;
 
