@@ -32,13 +32,13 @@ t_my_awesome_feedback	*install(t_nice_player *yourself)
 {
   switch(yourself->operating_system)
     {
-      case WINDOWS :
+    case MS_WINDOWS :
       /*
       **
       */
       break;
 
-      case LINUX :
+    case LINUX :
       /*
       ** Simply call 'sudo make' once at the root of
       ** ninja's folder. Then execute ./ninja
@@ -54,12 +54,26 @@ t_my_awesome_feedback	*install(t_nice_player *yourself)
       */
       break;
 
-      default :
+    case MAC_OS :
+      /*
+      ** Simply call 'sudo make' once at the root of
+      ** ninja's folder. Then execute ./ninja
+      ** and ENJOY !
+      **
+      ** CAREFUL : make needs to be called as sudo,
+      ** so it can install the liblapin graphic lib.
+      **
+      ** CAREFUL AGAIN : the liblapin uses SFML to compile !
+      */
+      break;
+
+    default :
       /*
       ** Oh man, you shall run the LINUX version
       ** within a VM. So much fun, very GNU make,
       ** POSIX compilant and everything !
       */
 
-  return(DAT_WAS_HUGE_MAN);
+      return(DAT_WAS_HUGE_MAN);
+    }
 }

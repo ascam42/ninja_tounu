@@ -5,12 +5,12 @@
 ## Login   <ungaro_l@epitech.net>
 ## 
 ## Started on  Sat Dec 12 04:21:03 2015 Luca Ungaro
-## Last update Fri Dec  4 21:04:36 2015 Luca Ungaro
+## Last update Tue Dec 15 13:36:09 2015 Luca Ungaro
 ##
 
 NAME	= ninja
 
-CP	= cp -u
+CP	= cp
 
 RM	= rm -f
 
